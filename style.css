@@ -1,0 +1,163 @@
+body {
+  background-image: url(img/eugene-kim-mQ1-HR_XdIg-unsplash.jpg);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 12px;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+.Navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  overflow: hidden;
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.Logo {
+  float: left;
+  margin-left: 30px;
+  color: #ff9800;
+  font-size: 24px;
+}
+
+.Hosted {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  color: #ff9800;
+  font-size: 12px;
+}
+
+.Navs ul {
+  list-style: none;
+  float: right;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.Navs ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.Navs ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.Navs ul li a:hover {
+  color: #ff5722;
+}
+
+.Homepage.page {
+  font-weight: bold;
+  margin-top: 80px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.Homepage.page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ff9800;
+}
+
+.Homepage.page p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.Aboutpage,
+.Contactpage {
+  font-size: 15px;
+  margin: auto;
+  padding: 40px;
+  color: #f0f6fb;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.Aboutpage h1,
+h2,
+.Contactpage h1 {
+  color: #4955d7;
+}
+
+.Aboutpage p,
+.Contactpage p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.Aboutpage ul li,
+.Contactpage ul li {
+  list-style: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.Contactpage a {
+  color: #f0f6fb;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  transition: color 0.3s ease;
+}
+
+.Contactpage a:hover {
+  color: #ff5722;
+}
+
+.emailme {
+  color:#4955d7;
+}
+
+.contact form {
+  margin: auto;
+  color: #f0f6fb;
+  font-family: "Courier New", Courier, monospace;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.formname label,
+.formemail label,
+.formmessage label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.submitbutton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 16px;
+}

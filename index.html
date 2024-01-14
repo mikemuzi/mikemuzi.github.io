@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muzi.com</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+    />
+  </head>
+  <body>
+    <div class="Navbar">
+      <div class="Logo">
+        <h1>M.K</h1>
+      </div>
+       <div class="Hosted">
+          <p>Hosted on Github pages</p>
+        </div>
+      <div class="Navs">
+        <ul>
+          <li><a href="#" onclick="showPage('home')">Home</a></li>
+          <li><a href="#" onclick="showPage('about')">About</a></li>
+          <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="Homepage page" id="home">
+      <h1>Mziomukulu Mike Kumalo</h1>
+      <p>
+        Welcome to my portfolio! Explore the world of technology and innovation
+        with me.
+      </p>
+    </div>
+
+    <div class="Aboutpage page" id="about" style="display: none">
+      <h1>About Me</h1>
+      <p>Hello,</p>
+      <p>
+        &nbsp;My name is Mziomukulu Mike Kumalo. I recently graduated with a
+        Bachelor of Science in Computer Engineering from 'Southern Illinoi
+        University - Edwardsville'. I have a strong passion for technology,
+        problem-solving, and creating innovative solutions.<br />
+        <br />
+        &nbsp;During my academic journey, I gained a solid foundation in
+        computer science principles, software development methodologies, and
+        hands-on experience with various programming languages and tools.<br />
+        <br />
+        &nbsp;My goal is to leverage my skills and knowledge to excel as a
+        Senior Software Developer. I am particularly interested in Full Stack
+        development, where I can contribute to both the front-end and back-end
+        aspects of projects, ensuring a seamless and user-friendly experience.
+      </p>
+      <h2>Skills:</h2>
+      <ul>
+        <li>Programming Languages: Java, JavaScript, Python</li>
+        <li>Web Technologies: HTML, CSS, JavaScript</li>
+        <li>Database Management: MySQL</li>
+        <li>Version Control: Git</li>
+      </ul>
+      <h2>Projects:</h2>
+      <ul>
+        <li>To-do-list Maker - Python</li>
+        <li>Simple Calculator - Java</li>
+      </ul>
+    </div>
+
+    <div class="Contactpage page" id="contact" style="display: none">
+      <h1>Contact Me</h1>
+      <h3>
+        <a href="https://www.linkedin.com/in/mike-kumalo" target="_blank"
+          >LinkedIn
+        </a>
+      </h3>
+      <h3><a href="https://github.com/mikemuzi" target="_blank">GitHub</a></h3>
+      <div class="contact form">
+        <div class="emailme">
+          <h2>Email Me</h2>
+        </div>
+        <form action="send_email.php" method="post">
+          <div class="formname">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="formemail">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="formmessage">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="submitbutton">
+            <input type="submit" value="Send Email" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js">
+      
+    </script>
+  </body>
+</html>
