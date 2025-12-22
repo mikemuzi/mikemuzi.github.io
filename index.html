@@ -172,28 +172,38 @@
 
         <div class="contact-form-container">
           <h3>Email Me</h3>
-          <form action="https://formspree.io/f/xkowzdoe" method="POST" id="contact-form">
-
-            <label> Enter your Email
-              <input type="email" name="_replyto" id="email" required />
-            </label>
-
-            <label> Enter your Full Name/ Company Name:
-              <input type="text" name="name" id="name" required />
-            </label>
-
-            <label> Enter your phone number:
-              <input type="text" name="phone" id="phone" required />
-            </label>
-
-            <label>
-              Enter your Message
-              <textarea name="message" id="message" required></textarea>
-            </label>
-
-            <button type="submit">Send Message</button>
-
-          </form>
+                 
+<form
+  action="https://formspree.io/f/{FORM_ID}"
+  class="fs-form"
+  target="_top"
+  method="POST"
+>
+  <div class="fs-field">
+    <label class="fs-label" for="name">Name:</label>
+    <input class="fs-input" id="name" name="name" required />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="email">Email Address:</label>
+    <input class="fs-input" id="email" name="email" required />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="number">Phone Number:</label>
+    <input class="fs-input" id="number" name="number" />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="message">Inquiry Message:</label>
+    <textarea
+      class="fs-textarea"
+      id="message"
+      name="message"
+      required
+    ></textarea>
+  </div>
+  <div class="fs-button-group">
+    <button class="fs-button" type="submit">Submit</button>
+  </div>
+</form>
 
         </div>
 
