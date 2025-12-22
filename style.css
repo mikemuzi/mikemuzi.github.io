@@ -347,22 +347,30 @@
         box-shadow: var(--shadow-light);
 
         transition: transform 0.3s, box-shadow 0.3s;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
       }
 
       .project-card:hover {
         transform: translateY(-5px);
 
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+
       }
 
       .project-link {
         display: inline-block;
-
-        margin-top: 20px;
-
+        margin-top: auto;
         font-weight: 600;
 
         color: var(--secondary-color);
+
       }
 
       /* --- Contact Section --- */
@@ -505,31 +513,7 @@
         }
       }
 
-      .project-card {
-        background: var(--white);
 
-        padding: 30px;
-
-        border-radius: 8px;
-
-        box-shadow: var(--shadow-light);
-
-        transition: transform 0.3s, box-shadow 0.3s;
-
-        display: flex;
-
-        flex-direction: column;
-
-        align-items: center;
-
-        text-align: center;
-      }
-
-      .project-card:hover {
-        transform: translateY(-5px);
-
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-      }
 
       .project-card img {
         width: 120px;
@@ -557,15 +541,7 @@
         flex-grow: 1;
       }
 
-      .project-link {
-        display: inline-block;
 
-        margin-top: auto;
-
-        font-weight: 600;
-
-        color: var(--secondary-color);
-      }
 
       button,
       input,
@@ -589,8 +565,8 @@
         appearance: none;
         flex-shrink: 0;
         padding: 0;
-        -webkit-user-select: none;
       }
+
 
       [type="checkbox"]:focus,
       [type="radio"]:focus,
@@ -886,10 +862,8 @@
         grid-column: 1 / -1;
       }
 
-      .fs-textarea::placeholder {
-        color: var(--color-text-muted);
-      }
 
+      
       .slider-label-container {
         display: flex;
         justify-content: space-between;
